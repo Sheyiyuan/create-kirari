@@ -1,0 +1,45 @@
+{
+  "name": "create-kirari",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "CLI to create a new Kirari blog project",
+  "bin": {
+    "create-kirari": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "astro",
+    "blog",
+    "theme",
+    "scaffold",
+    "create"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^0.10.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sheyiyuan/astro-theme-kirari"
+  },
+  "homepage": "https://github.com/Sheyiyuan/astro-theme-kirari#readme"
+}
